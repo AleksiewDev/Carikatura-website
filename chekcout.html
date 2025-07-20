@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Финализиране на Поръчката - Карикатури</title>
+  <link rel="stylesheet" href="carikaturkius.css">
+  <script defer src="hahahha.js"></script>
+</head>
+<body>
+
+  <header class="main-header">
+    <div class="logo">🎨 Карикатури</div>
+    <nav>
+      <ul>
+        <li><a href="carikaturka.html">Начало</a></li>
+        <li><a href="orderius.html">Поръчай</a></li>
+        <li><a href="pricius.html">Цени</a></li>
+        <li><a href="gallerius.html">Галерия</a></li>
+        <li><a href="aboutius.html">За нас</a></li>
+        <li><a href="contactius.html">Контакт</a></li>
+        <li><a href="sent-order.php" class="active">Количка</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="checkout-section">
+    <h1>Финализирай поръчката си</h1>
+    <p>Моля, потвърди въведената информация преди изпращане:</p>
+
+    <form class="checkout-form" id="checkoutForm">
+      <label for="fullName">Име и фамилия:</label>
+      <input type="text" id="fullName" required>
+
+      <label for="emailConfirm">Имейл за потвърждение:</label>
+      <input type="email" id="emailConfirm" required>
+
+      <label for="address">Адрес за доставка:</label>
+      <input type="text" id="address">
+
+      <label for="notes">Бележки към карикатурата:</label>
+      <textarea id="notes" rows="4"></textarea>
+
+      <button type="submit">Потвърди Поръчката</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Карикатури по Поръчка | <a href="mailto:cartoonsarts87@gmail.com">Свържи се с нас</a></p>
+  </footer>
+
+</body>
+</html>
