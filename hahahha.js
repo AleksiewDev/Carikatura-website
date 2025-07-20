@@ -45,3 +45,4 @@ document.getElementById("checkoutForm")?.addEventListener("submit", function (e)
   alert("Поръчката е финализирана! Очаквай потвърждение на имейл.");
   this.reset();
 });
+
