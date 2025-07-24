@@ -30,3 +30,31 @@ function zoomImage(img) {
 function closeZoom() {
   document.getElementById('zoom-modal').style.display = 'none';
 }
+// Contact form submission handler
+document.addEventListener("DOMContentLoaded", () => {
+  const contactForm = document.getElementById("contactForm");
+  const formMessage = document.getElementById("formMessage");
+
+  if (contactForm) {
+    contactForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const message = document.getElementById("message").value.trim();
+
+      if (!name || !email || !message) {
+        formMessage.textContent = "Моля, попълнете всички полета!";
+        formMessage.style.color = "red";
+        return;
+      }
+
+      // Simulated form success
+      formMessage.textContent = "Съобщението е изпратено успешно!";
+      formMessage.style.color = "green";
+
+      contactForm.reset();
+    });
+  }
+});
+
