@@ -317,3 +317,102 @@ footer {
   border: 3px solid #ff3399;
   background: #ffe0ec;
 }
+.about-us-header {
+  background: #fff0f5;
+  padding: 4rem 2rem 2rem;
+  text-align: center;
+}
+
+.about-us-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-story {
+  padding: 2rem;
+  background: #fff;
+}
+
+.story-content {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.story-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.story-content p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.team-section {
+  background: #ffe6f0;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.team-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.team-member {
+  background: white;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  max-width: 220px;
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+}
+
+.team-member img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 0.8rem;
+}
+
+.team-member h3 {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  color: #cc0066;
+}
+
+.team-member p {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.mission-section {
+  background: #fff0f8;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.mission-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.mission-section p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.6;
+}
+
