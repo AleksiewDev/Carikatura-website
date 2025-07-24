@@ -1,48 +1,32 @@
-// Промяна на header при скрол
-window.addEventListener('scroll', () => {
-  const header = document.querySelector('.main-header');
-  if (window.scrollY > 50) {
-    header.style.backgroundColor = '#f88';
-  } else {
-    header.style.backgroundColor = '#ffcccb';
-  }
-});
+function scrollToSection(id) {
+  document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+}
+// Filter gallery
+function filterGallery(category) {
+  const items = document.querySelectorAll('.gallery-item');
+  const buttons = document.querySelectorAll('.filter-btn');
 
-// Анимация при скрол – fade-in (примерно)
-const sections = document.querySelectorAll('section');
+  buttons.forEach(btn => btn.classList.remove('active'));
+  event.target.classList.add('active');
 
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('fade-in');
+  items.forEach(item => {
+    if (category === 'all' || item.classList.contains(category)) {
+      item.style.display = 'block';
+    } else {
+      item.style.display = 'none';
     }
   });
-}, { threshold: 0.1 });
+}
 
-sections.forEach(section => {
-  observer.observe(section);
-});
-document.getElementById("orderForm").addEventListener("submit", function(e) {
-  e.preventDefault();
-  alert("Поръчката е изпратена успешно!");
-  this.reset();
-});
-document.querySelectorAll('.gallery-grid img').forEach(img => {
-  img.addEventListener('click', () => {
-    window.open(img.src, '_blank');
-  });
-});
-// Контактна форма
-document.getElementById("contactForm")?.addEventListener("submit", function (e) {
-  e.preventDefault();
-  alert("Благодарим за съобщението! Ще се свържем с теб скоро.");
-  this.reset();
-});
+// Zoom image
+function zoomImage(img) {
+  const zoomModal = document.getElementById('zoom-modal');
+  const zoomedImg = document.getElementById('zoomed-img');
+  zoomedImg.src = img.src;
+  zoomModal.style.display = 'flex';
+}
 
-// Финализиране
-document.getElementById("checkoutForm")?.addEventListener("submit", function (e) {
-  e.preventDefault();
-  alert("Поръчката е финализирана! Очаквай потвърждение на имейл.");
-  this.reset();
-});
-
+// Close zoom
+function closeZoom() {
+  document.getElementById('zoom-modal').style.display = 'none';
+}
