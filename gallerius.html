@@ -1,58 +1,45 @@
 <!DOCTYPE html>
 <html lang="bg">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Галерия | CartoonArts</title>
-  <link rel="stylesheet" href="carikaturkius.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Галерия - Карикатури</title>
+  <link rel="stylesheet" href="carikaturkius.css">
+  <script defer src="hahahha.js"></script>
 </head>
 <body>
-  <header>
-    <div class="logo">🎨 CartoonArts</div>
+
+  <header class="main-header">
+    <div class="logo">🎨 Cartoon Arts</div>
     <nav>
       <ul>
-        <li><a href="index.html">Начало</a></li>
+        <li><a href="carikaturka.html">Начало</a></li>
+        <li><a href="orderius.html">Поръчай</a></li>
         <li><a href="pricius.html">Цени</a></li>
         <li><a href="gallerius.html" class="active">Галерия</a></li>
         <li><a href="aboutius.html">За нас</a></li>
-        <li><a href="contactius.png">Контакти</a></li>
+        <li><a href="contactius.html">Контакт</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="gallery-header">
-    <h1>Нашата Арт Галерия</h1>
-    <p>Разгледай нашите творби и вдъхнови се!</p>
+  <section class="gallery-section">
+    <h1>Нашите Карикатури</h1>
+    <p>Разгледай някои от нашите любими творения.</p>
 
-    <div class="filters">
-      <button class="filter-btn active" onclick="filterGallery('all')">Всички</button>
-      <button class="filter-btn" onclick="filterGallery('portrait')">Портрети</button>
-      <button class="filter-btn" onclick="filterGallery('couple')">Двойки</button>
-      <button class="filter-btn" onclick="filterGallery('gift')">Подаръци</button>
+    <div class="gallery-grid">
+      <img src="grigor.png" alt="Портретна карикатура">
+      <img src="vtorakar.png" alt="Хумористична карикатура">
+      <img src="tretakar.png" alt="Семейна карикатура">
+      <img src="superboy.png" alt="Супергеройска карикатура">
     </div>
   </section>
 
-  <section class="gallery-container">
-    <div class="gallery-item portrait">
-      <img src="Aleksiew.png" alt="Карикатура" onclick="zoomImage(this)">
-    </div>
-    <div class="gallery-item couple">
-      <img src="grigor.png" alt="Карикатура" onclick="zoomImage(this)">
-    </div>
-    <div class="gallery-item gift">
-      <img src="black.png" alt="Карикатура" onclick="zoomImage(this)">
-    </div>
-    <div class="gallery-item portrait">
-      <img src="tretakar.png" alt="Карикатура" onclick="zoomImage(this)">
-    </div>
-  </section>
-
-
-  <footer>
-    <p>© 2025 CartoonArts. Благодарим, че разгледахте нашето изкуство!</p>
+  <footer class="footer">
+    <p>&copy; 2025 Карикатури по Поръчка | <a href="cartoonsarts87@gmail.com">Свържи се с нас</a></p>
   </footer>
 
-  <script src="hahahha.js"></script>
 </body>
 </html>
+
 
