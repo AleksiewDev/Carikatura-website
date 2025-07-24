@@ -1,60 +1,48 @@
-function scrollToSection(id) {
-  document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
-}
-// Filter gallery
-function filterGallery(category) {
-  const items = document.querySelectorAll('.gallery-item');
-  const buttons = document.querySelectorAll('.filter-btn');
+// Промяна на header при скрол
+window.addEventListener('scroll', () => {
+  const header = document.querySelector('.main-header');
+  if (window.scrollY > 50) {
+    header.style.backgroundColor = '#f88';
+  } else {
+    header.style.backgroundColor = '#ffcccb';
+  }
+});
 
-  buttons.forEach(btn => btn.classList.remove('active'));
-  event.target.classList.add('active');
+// Анимация при скрол – fade-in (примерно)
+const sections = document.querySelectorAll('section');
 
-  items.forEach(item => {
-    if (category === 'all' || item.classList.contains(category)) {
-      item.style.display = 'block';
-    } else {
-      item.style.display = 'none';
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('fade-in');
     }
   });
-}
+}, { threshold: 0.1 });
 
-// Zoom image
-function zoomImage(img) {
-  const zoomModal = document.getElementById('zoom-modal');
-  const zoomedImg = document.getElementById('zoomed-img');
-  zoomedImg.src = img.src;
-  zoomModal.style.display = 'flex';
-}
+sections.forEach(section => {
+  observer.observe(section);
+});
+document.getElementById("orderForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+  alert("Поръчката е изпратена успешно!");
+  this.reset();
+});
+document.querySelectorAll('.gallery-grid img').forEach(img => {
+  img.addEventListener('click', () => {
+    window.open(img.src, '_blank');
+  });
+});
+// Контактна форма
+document.getElementById("contactForm")?.addEventListener("submit", function (e) {
+  e.preventDefault();
+  alert("Благодарим за съобщението! Ще се свържем с теб скоро.");
+  this.reset();
+});
 
-// Close zoom
-function closeZoom() {
-  document.getElementById('zoom-modal').style.display = 'none';
-}
-// Contact form submission handler
-document.addEventListener("DOMContentLoaded", () => {
-  const contactForm = document.getElementById("contactForm");
-  const formMessage = document.getElementById("formMessage");
-
-  if (contactForm) {
-    contactForm.addEventListener("submit", function (e) {
-      e.preventDefault();
-
-      const name = document.getElementById("name").value.trim();
-      const email = document.getElementById("email").value.trim();
-      const message = document.getElementById("message").value.trim();
-
-      if (!name || !email || !message) {
-        formMessage.textContent = "Моля, попълнете всички полета!";
-        formMessage.style.color = "red";
-        return;
-      }
-
-      // Simulated form success
-      formMessage.textContent = "Съобщението е изпратено успешно!";
-      formMessage.style.color = "green";
-
-      contactForm.reset();
-    });
-  }
+// Финализиране
+document.getElementById("checkoutForm")?.addEventListener("submit", function (e) {
+  e.preventDefault();
+  alert("Поръчката е финализирана! Очаквай потвърждение на имейл.");
+  this.reset();
 });
 
