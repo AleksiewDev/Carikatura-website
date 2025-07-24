@@ -1,49 +1,51 @@
 <!DOCTYPE html>
 <html lang="bg">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Контакт - Карикатури</title>
-  <link rel="stylesheet" href="carikaturkius.css">
-  <script defer src="hahahha.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Контакти | CartoonArts</title>
+  <link rel="stylesheet" href="carikaturkius.css" />
 </head>
 <body>
-
-  <header class="main-header">
-    <div class="logo">🎨 Cartoon Arts</div>
+  <header>
+    <div class="logo">🎨 CartoonArts</div>
     <nav>
       <ul>
         <li><a href="index.html">Начало</a></li>
         <li><a href="pricius.html">Цени</a></li>
         <li><a href="gallerius.html">Галерия</a></li>
         <li><a href="aboutius.html">За нас</a></li>
-        <li><a href="contactius.html" class="active">Контакт</a></li>
+        <li><a href="contactius.html" class="active">Контакти</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="contact-section">
-    <h1>Свържи се с нас</h1>
-    <p>Имаш въпрос? Пиши ни и ще се свържем с теб възможно най-скоро!</p>
+  <section class="contact-header">
+    <h1>Свържи се с нас 💌</h1>
+    <p>Ще отговорим възможно най-бързо!</p>
+  </section>
 
-    <form class="contact-form" id="contactForm">
-      <label for="contactName">Име:</label>
-      <input type="text" id="contactName" required>
+  <section class="contact-form-section">
+    <form id="contactForm">
+      <label for="name">Име *</label>
+      <input type="text" id="name" name="name" required>
 
-      <label for="contactEmail">Имейл:</label>
-      <input type="email" id="contactEmail" required>
+      <label for="email">Имейл *</label>
+      <input type="email" id="email" name="email" required>
 
-      <label for="contactMsg">Съобщение:</label>
-      <textarea id="contactMsg" rows="5" required></textarea>
+      <label for="message">Съобщение *</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
 
       <button type="submit">Изпрати</button>
+      <p id="formMessage"></p>
     </form>
   </section>
 
-  <footer class="footer">
-    <p>&copy; 2025 Карикатури по Поръчка | <a href="mailto:cartoonsarts87@gmail.com">cartoonsarts87@gmail.com</a></p>
+  <footer>
+    <p>© 2025 CartoonArts. Очакваме с нетърпение да се чуем!</p>
   </footer>
 
+  <script src="hahahha.js"></script>
 </body>
 </html>
 
