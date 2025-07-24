@@ -1,112 +1,73 @@
 <!DOCTYPE html>
 <html lang="bg">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Карикатури по Поръчка</title>
-  <link rel="stylesheet" href="carikaturkius.css">
-  <script defer src="hahahha.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cartoon Arts</title>
+  <link rel="stylesheet" href="carikaturkius.css" />
 </head>
 <body>
-
-  <header class="main-header">
-    <div class="logo">🎨 Cartoon Arts</div>
+  <header>
+    <div class="logo">🎨 CartoonArts</div>
     <nav>
       <ul>
-        <li><a href="index.html"  class="active" >Начало</a></li>
-        <li><a href="pricius.html">Цени</a></li>
-        <li><a href="gallerius.html">Галерия</a></li>
-        <li><a href="aboutius.html">За нас</a></li>
-        <li><a href="contactius.html">Контакт</a></li>
-   
-
+        <li><a href="index.html" class="active">Начало</a></li>
+        <li><a href="ceni.html">Цени</a></li>
+        <li><a href="galeria.html">Галерия</a></li>
+        <li><a href="za-nas.html">За нас</a></li>
+        <li><a href="kontakti.html">Контакти</a></li>
       </ul>
     </nav>
   </header>
 
   <section class="hero">
-    <div class="hero-content">
-      <h1>Карикатура, която говори вместо теб!</h1>
-      <p>Създаваме уникални, забавни и персонализирани карикатури по снимка.</p>
-      <div class="buttons">
-        <a href="https://forms.gle/3wJkwr46J3VT7VARA" class="btn primary">Поръчай сега</a>
-        <a href="gallerius.html" class="btn secondary">Виж примери</a>
+    <h1>Добре дошли в CartoonArts 🎉</h1>
+    <p>Създаваме уникални карикатури, портрети и арт анимации по ваш вкус!</p>
+    <button onclick="scrollToSection('about')">Научи повече</button>
+  </section>
+
+  <section class="about" id="about">
+    <h2>Какво предлагаме?</h2>
+    <div class="features">
+      <div class="feature">
+        <img src="Aleksiew.png" alt="Custom Art">
+        <h3>Индивидуален стил</h3>
+        <p>Всяка картина е рисувана ръчно, според вашите предпочитания.</p>
+      </div>
+      <div class="feature">
+        <img src="grigor.png" alt="Gift">
+        <h3>Идеален подарък</h3>
+        <p>Перфектен избор за рожден ден, годишнина или специален повод.</p>
+      </div>
+      <div class="feature">
+        <img src="black.png" alt="Digital Delivery">
+        <h3>Дигитална доставка</h3>
+        <p>Бърза и лесна доставка по имейл или принтиран вариант по избор.</p>
       </div>
     </div>
   </section>
 
-  <section class="why-us">
-    <h2>Защо да избереш нас?</h2>
-    <div class="reasons">
-      <div class="reason">🖌️ Ръчно рисувани и дигитални стилове</div>
-      <div class="reason">⏱️ Бърза изработка – до 48 часа</div>
-      <div class="reason">💬 Персонализирани по твое описание</div>
-      <div class="reason">💳 Плащане при доставка</div>
-    </div>
-  </section>
-
- <section class="page-header">
-    <h1>Разгледай нашите видове карикатури</h1>
-    <p>Всеки стил е различен – избери този, който ти подхожда най-много!</p>
-  </section>
-
-  <section class="cartoon-types">
-    <div class="cartoon-type">
-      <img src="Aleksiew.png" alt="Портретна карикатура">
-      <h2>🎭 Портретна</h2>
-      <p>Идеална за подарък – артистично изрисуван лик със закачливи черти.</p>
-    </div>
-
-    <div class="cartoon-type">
-      <img src="vtorakar.png" alt="Хумористична карикатура">
-      <h2>🤣 Хумористична</h2>
-      <p>Добавяме шеги и ситуации – забавен сценарий по твоя идея!</p>
-    </div>
-
-    <div class="cartoon-type">
-      <img src="tretakar.png" alt="Семейна карикатура">
-      <h2>👨‍👩‍👧‍👦 Семейна</h2>
-      <p>Всички заедно в едно произведение – страхотно за спомени.</p>
-    </div>
-    
-
-    <div class="cartoon-type">
-      <img src="avatar.png" alt="Аватар карикатура">
-      <h2>📱 Аватарна</h2>
-      <p>Идеална за профили в социални мрежи – дигитална, модерна визия.</p>
-    </div>
-
-    <div class="cartoon-type">
-      <img src="black.png" alt="Черно-бяла карикатура">
-      <h2>🖤 Черно-бяла</h2>
-      <p>Класически стил за елегантен и изчистен вид.</p>
-    </div>
-
-
-  <section class="reviews">
+  <section class="testimonials">
     <h2>Отзиви от клиенти</h2>
-    <div class="review-list">
-      <div class="review">“Най-яката изненада за рождения ми ден! – Петя”</div>
-      <div class="review">“Карикатурата беше точно по моя идея! – Иван”</div>
-      <div class="review">“Ще поръчам пак – перфектно изпълнение. – Мария”</div>
+    <div class="testimonial-box">
+      <p>"Уникална картина! Моят приятел беше много щастлив!" – Мария</p>
+      <p>"Професионализъм на високо ниво, бърза комуникация!" – Иван</p>
+      <p>"Много благодаря! Ще поръчам пак!" – Елена</p>
     </div>
   </section>
 
-  <section class="faq-preview">
-    <h2>Често задавани въпроси</h2>
-    <ul class="faq-list">
-      <li><strong>Колко време отнема?</strong> – Обикновено до 2 дни.</li>
-      <li><strong>Какво трябва да изпратя?</strong> – Снимка и кратко описание.</li>
-      <li><strong>Мога ли да направя корекции?</strong> – Разбира се!</li>
-    </ul>
+  <section class="cta">
+    <h2>Искаш своя собствена карикатура?</h2>
+    <p>Свържи се с нас днес и ще те превърнем в изкуство!</p>
+    <a href="https://forms.gle/3wJkwr46J3VT7VARA" class="btn">Поръчай сега</a>
   </section>
 
-  <footer class="footer">
-    <p>Свържи се с нас: <a href="mailto:cartoonsarts87@gmail.com">cartoonsarts87@gmail.com</a> | Instagram: https://www.instagram.com/carikaturaaa/</p>
-    <p>&copy; 2025 Карикатури по Поръчка</p>
+  <footer>
+    <p>© 2025 CartoonArts. Създадено с любов и въображение.</p>
   </footer>
 
+  <script src="hahahha.js"></script>
 </body>
 </html>
+  
 
