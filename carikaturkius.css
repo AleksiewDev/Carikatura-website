@@ -415,4 +415,66 @@ footer {
   margin: auto;
   line-height: 1.6;
 }
+.contact-header {
+  background: #fff0f5;
+  padding: 4rem 2rem 2rem;
+  text-align: center;
+}
 
+.contact-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-form-section {
+  padding: 3rem 2rem;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  background: #ffe6f0;
+  padding: 2rem;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+form label {
+  font-weight: bold;
+  color: #cc0066;
+}
+
+form input,
+form textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+form button {
+  background: #ff3399;
+  color: white;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: #cc0066;
+}
+
+#formMessage {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: green;
+}
