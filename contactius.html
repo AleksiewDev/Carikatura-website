@@ -1,49 +1,73 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="bg">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Контакт - Карикатури</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cartoon Arts — Контакт</title>
   <link rel="stylesheet" href="carikaturkius.css">
-  <script defer src="hahahha.js"></script>
 </head>
 <body>
-
-  <header class="main-header">
-    <div class="logo">🎨 Карикатури</div>
-    <nav>
-      <ul>
-        <li><a href="carikaturka.html">Начало</a></li>
-        <li><a href="pricius.html">Цени</a></li>
-        <li><a href="gallerius.html">Галерия</a></li>
-        <li><a href="aboutius.html">За нас</a></li>
-        <li><a href="contactius.html" class="active">Контакт</a></li>
-      </ul>
-    </nav>
+  <header class="site-header small">
+    <div class="container header-inner">
+      <a class="logo" href="1.html">Cartoon<span>Arts</span></a>
+      <nav class="nav">
+        <a href="index.html">Начало</a>
+        <a href="pricius.html">Цени</a>
+        <a href="gallerius.html">Галерия</a>
+        <a href="aboutius.html">За Нас</a>
+        <a href="contactius.html" class="contact-cta">Контакт</a>
+      </nav>
+      <button class="nav-toggle" id="navToggleContact" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </header>
 
-  <section class="contact-section">
-    <h1>Свържи се с нас</h1>
-    <p>Имаш въпрос? Пиши ни и ще се свържем с теб възможно най-скоро!</p>
+  <main class="container">
+    <section class="contact fade-in-up">
+      <h1>Контакт</h1>
+      <p class="section-sub">Свържете се с нас за запитване или поръчка — попълнете формата или използвайте изброените контакти.</p>
 
-    <form class="contact-form" id="contactForm">
-      <label for="contactName">Име:</label>
-      <input type="text" id="contactName" required>
+      <div class="contact-grid">
+        <form id="contactForm" class="contact-form slide-in-left" novalidate>
+          <label>Име
+            <input type="text" name="name" id="name" placeholder="Вашето име" required>
+          </label>
+          <label>Имейл
+            <input type="email" name="email" id="email" placeholder="you@example.com" required>
+          </label>
+          <label>Тип услуга
+            <select name="service" id="service">
+              <option value="caricature">Карикатура</option>
+              <option value="illustration">Илюстрация</option>
+              <option value="animation">Анимация</option>
+            </select>
+          </label>
+          <label>Описание (кратко)
+            <textarea name="message" id="message" rows="5" placeholder="Опишете какво желаете..." required></textarea>
+          </label>
+          <div class="form-actions">
+            <button type="submit" class="btn primary-btn">Изпрати запитване</button>
+            <button type="reset" class="btn outline">Изчисти</button>
+          </div>
+          <p id="formMsg" class="form-msg" aria-live="polite"></p>
+        </form>
 
-      <label for="contactEmail">Имейл:</label>
-      <input type="email" id="contactEmail" required>
+        <div class="contact-info slide-in-right">
+          <h3>Контакти</h3>
+          <p><strong>Имейл:</strong> cartoonarts87@gmail.com</p>
+          <p><strong>Телефон:</strong> +359 89 989 8625</p>
 
-      <label for="contactMsg">Съобщение:</label>
-      <textarea id="contactMsg" rows="5" required></textarea>
+          <p><strong>Адрес:</strong> гр. Елена, България</p>
 
-      <button type="submit">Изпрати</button>
-    </form>
-  </section>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-  <footer class="footer">
-    <p>&copy; 2025 Карикатури по Поръчка | <a href="mailto:cartoonsarts87@gmail.com">cartoonsarts87@gmail.com</a></p>
-  </footer>
 
+  <script src="hahahha.js"></script>
 </body>
 </html>
 
