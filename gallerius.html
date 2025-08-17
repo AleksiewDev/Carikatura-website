@@ -1,44 +1,52 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="bg">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Галерия - Карикатури</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cartoon Arts — Галерия</title>
   <link rel="stylesheet" href="carikaturkius.css">
-  <script defer src="hahahha.js"></script>
 </head>
 <body>
-
-  <header class="main-header">
-    <div class="logo">🎨 Cartoon Arts</div>
-    <nav>
-      <ul>
-        <li><a href="carikaturka.html">Начало</a></li>
-        <li><a href="pricius.html">Цени</a></li>
-        <li><a href="gallerius.html" class="active">Галерия</a></li>
-        <li><a href="aboutius.html">За нас</a></li>
-        <li><a href="contactius.html">Контакт</a></li>
-      </ul>
-    </nav>
+  <header class="site-header small">
+    <div class="container header-inner">
+      <a class="logo" href="1.html">Cartoon<span>Arts</span></a>
+      <nav class="nav">
+        <a href="index.html">Начало</a>
+        <a href="pricius.html">Цени</a>
+        <a href="gallerius.html">Галерия</a>
+        <a href="aboutius.html">За Нас</a>
+        <a href="contactius.html" class="contact-cta">Контакт</a>
+      </nav>
+      <button class="nav-toggle" id="navToggleGallery" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </header>
 
-  <section class="gallery-section">
-    <h1>Нашите Карикатури</h1>
-    <p>Разгледай някои от нашите любими творения.</p>
+  <main class="container">
+    <section class="gallery-section fade-in-up">
+      <h1>Галерия</h1>
+      <p class="section-sub">Извадка от работите ни — кликнете за увеличение.</p>
 
-    <div class="gallery-grid">
-      <img src="grigor.png" alt="Портретна карикатура">
-      <img src="vtorakar.png" alt="Хумористична карикатура">
-      <img src="tretakar.png" alt="Семейна карикатура">
-      <img src="superboy.png" alt="Супергеройска карикатура">
-    </div>
-  </section>
+      <div class="gallery-grid">
+        <!-- Replace src with your images in assets/ -->
+        <img src="Aleksiew.png" alt="Gallery 1" class="gallery-item" />
+        <img src="black.png" alt="Gallery 2" class="gallery-item" />
+        <img src="Avatar.png" alt="Gallery 3" class="gallery-item" />
+        <img src="grigor.png" alt="Gallery 4" class="gallery-item" />
+      </div>
 
-  <footer class="footer">
-    <p>&copy; 2025 Карикатури по Поръчка | <a href="cartoonsarts87@gmail.com">Свържи се с нас</a></p>
-  </footer>
+      <!-- Lightbox -->
+      <div class="lightbox" id="lightbox" aria-hidden="true">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Затвори">✕</button>
+        <img src="" alt="" id="lightboxImg">
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+      </div>
+    </section>
+  </main>
 
+
+
+  <script src="hahahha.js"></script>
 </body>
 </html>
-
-
