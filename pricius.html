@@ -1,172 +1,75 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="bg">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Цени на Карикатурите</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cartoon Arts — Цени</title>
   <link rel="stylesheet" href="carikaturkius.css">
-  <script defer src="hahahha.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
 </head>
 <body>
-
-  <header class="main-header">
-    <div class="logo">🎨 Cartoon Arts</div>
-    <nav>
-      <ul>
-        <li><a href="carikaturka.html">Начало</a></li>
-        <li><a href="pricius.html" class="active">Цени</a></li>
-        <li><a href="gallerius.html">Галерия</a></li>
-        <li><a href="aboutius.html">За нас</a></li>
-        <li><a href="contactius.html">Контакт</a></li>
-
-      </ul>
-    </nav>
+  <header class="site-header small">
+    <div class="container header-inner">
+      <a class="logo" href="1.html">Cartoon<span>Arts</span></a>
+      <nav class="nav" id="navPrice">
+        <a href="index.html">Начало</a>
+        <a href="pricius.html">Цени</a>
+        <a href="gallerius.html">Галерия</a>
+        <a href="aboutius.html">За Нас</a>
+        <a href="contactius.html" class="contact-cta">Контакт</a>
+      </nav>
+      <button class="nav-toggle" id="navTogglePrice" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </header>
 
-  <section class="pricing-page">
-    <h1>Цени на Карикатурите</h1>
-    <p class="pricing-info">Всички карикатури могат да бъдат дигитални или на хартия. Включват корекции и консултация.</p>
+  <main class="container">
+    <section class="prices fade-in-up">
+      <h1>Цени</h1>
 
-    <div class="pricing-table">
-      <div class="pricing-card">
-        <h2>🎭 Портретна</h2>
-        <p>1 човек, дигитална версия</p>
-        <p class="price">110 лв</p>
-        <p>Изработка: 2 дни</p>
-        <a href="orderius.html" class="btn primary">Поръчай</a>
-      </div>
-      
-    <div class="pricing-table">
-      <div class="pricing-card">
-        <h2>🎭 Портретна</h2>
-        <p>2 човекa, дигитална версия</p>
-        <p class="price">120 лв</p>
-        <p>Изработка: 2 дни</p>
-        <a href="orderius.html" class="btn primary">Поръчай</a>
-      </div>
-      
-    <div class="pricing-table">
-      <div class="pricing-card">
-        <h2>🎭 Портретна</h2>
-        <p>3 човекa, дигитална версия</p>
-        <p class="price">130 лв</p>
-        <p>Изработка: 2 дни</p>
-        <a href="orderius.html" class="btn primary">Поръчай</a>
-      </div>
+      <div class="price-grid">
+        <article class="price-card pop-in">
+          <h3>🎭 Портретна</h3>
+          <div class="price">110 - 130 <span>лв</span></div>
+          <ul>
+            <li>1 - 3 човека / карикатура</li>
+            <li>PNG 2000px</li>
+          </ul>
+          <a href="https://forms.gle/VC2q58dU3Py7H7Lg7" class="btn outline">Поръчай</a>
+        </article>
 
-    <div class="pricing-table">
-      <div class="pricing-card">
-        <h2>🎭 Портретна</h2>
-        <p>4 човекa, дигитална версия</p>
-        <p class="price">140 лв</p>
-        <p>Изработка: 2 дни</p>
-        <a href="orderius.html" class="btn primary">Поръчай</a>
-      </div>
+        <article class="price-card best pop-in">
+          <div class="badge">Най-популярно</div>
+          <h3>👨‍👩‍👧‍👦 Семейна</h3>
+          <div class="price">150 - 200 <span>лв</span></div>
+          <ul>
+            <li>3 - 5 човека</li>
+            <li>PNG + JPG, 3000px</li>
+            <li>Комерсиално ползване</li>
+          </ul>
+          <a href="https://forms.gle/VC2q58dU3Py7H7Lg7" class="btn primary-btn">Поръчай</a>
+        </article>
 
-
-
-      <div class="pricing-card">
-        <h2>🤣 Хумористична</h2>
-        <p>1 човек, със Фон</p>
-        <p class="price">115 лв</p>
-        <p>Изработка: 3 дни</p>
-        <a href="orderius.html" class="btn primary">Поръчай</a>
-      </div>
- <div class="pricing-card">
-        <h2>🤣 Хумористична</h2>
-        <p>2 човека, със Фон</p>
-        <p class="price">125.00 лв</p>
-        <p>Изработка: 3 дни</p>
-        <a href="orderius.html" class="btn primary">Поръчай</a>
-      </div>
-       <div class="pricing-card">
-        <h2>🤣 Хумористична</h2>
-        <p>3 човека, със Фон</p>
-        <p class="price">135.00 лв</p>
-        <p>Изработка: 3 дни</p>
-        <a href="orderius.html" class="btn primary">Поръчай</a>
-      </div>
-       <div class="pricing-card">
-        <h2>🤣 Хумористична</h2>
-        <p>4 човека, със Фон</p>
-        <p class="price">135.00 лв</p>
-        <p>Изработка: 3 дни</p>
-        <a href="orderius.html" class="btn primary">Поръчай</a>
+        <article class="price-card pop-in">
+          <h3>🤣 Хумористична</h3>
+          <div class="price">115 - 135 <span>лв</span></div>
+          <ul>
+            <li>До 4 персонажа</li>
+            <li>Висока резолюция + PSD / SVG</li>
+            <li>3 ревизии + приоритетна доставка</li>
+          </ul>
+          <a href="https://forms.gle/VC2q58dU3Py7H7Lg7" class="btn outline">Поръчай</a>
+        </article>
       </div>
 
-      <div class="pricing-card">
-        <h2>👨‍👩‍👧‍👦 Семейна</h2>
-        <p>3 човека</p>
-        <p class="price">150.00 лв</p>
-        <p>Изработка: 3–4 дни</p>
-        <a href="orderius.html" class="btn primary">Поръчай</a>
-      </div>
-            <div class="pricing-card">
-        <h2>👨‍👩‍👧‍👦 Семейна</h2>
-        <p>4 човека</p>
-        <p class="price">175.00 лв</p>
-        <p>Изработка: 3–4 дни</p>
-        <a href="orderius.html" class="btn primary">Поръчай</a>
-      </div>
-            <div class="pricing-card">
-        <h2>👨‍👩‍👧‍👦 Семейна</h2>
-        <p>5 човека</p>
-        <p class="price">200.00 лв</p>
-        <p>Изработка: 3–4 дни</p>
-        <a href="orderius.html" class="btn primary">Поръчай</a>
-      </div>
-      
+      <div class="price-notes slide-in-right">
+    </section>
+  </main>
 
-      <div class="pricing-card">
-        <h2>🦸 Супергерой</h2>
-        <p>1 човекa в комикс стил</p>
-        <p class="price">120.00 лв</p>
-        <p>Изработка: 2–3 дни</p>
-        <a href="orderius.html" class="btn primary">Поръчай</a>
-      </div>
 
-      <div class="pricing-card">
-        <h2>🦸 Супергерой</h2>
-        <p>2 човекa в комикс стил</p>
-        <p class="price">130.00 лв</p>
-        <p>Изработка: 2–3 дни</p>
-        <a href="orderius.html" class="btn primary">Поръчай</a>
-      </div>
 
-      <div class="pricing-card">
-        <h2>🦸 Супергерой</h2>
-        <p>3 човекa в комикс стил</p>
-        <p class="price">140.00 лв</p>
-        <p>Изработка: 2–3 дни</p>
-        <a href="orderius.html" class="btn primary">Поръчай</a>
-      </div>
-
-      <div class="pricing-card">
-        <h2>🦸 Супергерой</h2>
-        <p>4 човекa в комикс стил</p>
-        <p class="price">140.00 лв</p>
-        <p>Изработка: 2–3 дни</p>
-        <a href="orderius.html" class="btn primary">Поръчай</a>
-      </div>
-
-       <div class="pricing-card">
-        <h2>🦸 Супергерой</h2>
-        <p>5 човекa в комикс стил</p>
-        <p class="price">150.00 лв</p>
-        <p>Изработка: 2–3 дни</p>
-        <a href="orderius.html" class="btn primary">Поръчай</a>
-      </div>
-      
-    </div>
-  </section>
-
-  <footer class="footer">
-    <p>&copy; 2025 Карикатури по Поръчка | <a href="cartoonsarts87@gmail.com">Свържи се с нас</a></p>
-  </footer>
-
+  <script src="hahahha.js"></script>
 </body>
 </html>
 
- <a href="https://forms.gle/3wJkwr46J3VT7VARA" class="btn primary">Поръчай сега</a>
- <div class="logo">🎨 Cartoon Arts</div>
+
