@@ -1,117 +1,120 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="bg">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Карикатури по Поръчка</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cartoon Arts — Начало</title>
   <link rel="stylesheet" href="carikaturkius.css">
-  <script defer src="hahahha.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
 </head>
 <body>
-
-  <header class="main-header">
-    <div class="logo">🎨 Cartoon Arts</div>
-    <nav>
-      <ul>
-        <li><a href="carikaturka.html"  class="active" >Начало</a></li>
-        <li><a href="pricius.html">Цени</a></li>
-        <li><a href="gallerius.html">Галерия</a></li>
-        <li><a href="aboutius.html">За нас</a></li>
-        <li><a href="contactius.html">Контакт</a></li>
-
-      </ul>
-    </nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="1.html">Cartoon<span>Arts</span></a>
+      <nav class="nav" id="nav">
+        <a href="index.html">Начало</a>
+        <a href="pricius.html">Цени</a>
+        <a href="gallerius.html">Галерия</a>
+        <a href="aboutius.html">За Нас</a>
+        <a href="contactius.html" class="contact-cta">Контакт</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </header>
 
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Карикатура, която говори вместо теб!</h1>
-      <p>Създаваме уникални, забавни и персонализирани карикатури по снимка.</p>
-      <div class="buttons">
-        <a href="https://forms.gle/CSeXTZQTPLqPNNgg7" class="btn primary">Поръчай сега</a>
-        <a href="gallerius.html" class="btn secondary">Виж примери</a>
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content container">
+        <h1 class="title-appearance">Cartoon Arts — Живи, чаровни карикатури и илюстрации</h1>
+        <p class="lead">Поръчайте персонализирани карикатури, илюстрации за социални мрежи, лога и анимации с професионално качество.</p>
+        <div class="hero-actions">
+          <!-- Place your ordering link in href -->
+          <a href="https://forms.gle/VC2q58dU3Py7H7Lg7" class="btn primary-btn" id="orderBtn">Поръчай сега</a>
+          <a href="3.html" class="btn ghost-btn">Виж Галерия</a>
+        </div>
       </div>
-    </div>
-  </section>
+      <div class="hero-decor">
+        <svg class="wobble" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <path d="M0 100 C30 0 70 0 100 100 Z" fill="rgba(255,255,255,0.03)"/>
+        </svg>
+      </div>
+    </section>
 
-  <section class="why-us">
-    <h2>Защо да избереш нас?</h2>
-    <div class="reasons">
-      <div class="reason">🖌️ Ръчно рисувани и дигитални стилове</div>
-      <div class="reason">⏱️ Бърза изработка – до 48 часа</div>
-      <div class="reason">💬 Персонализирани по твое описание</div>
-      <div class="reason">💳 Плащане при доставка</div>
-    </div>
-  </section>
+    <!-- SERVICES / WHAT WE DO -->
+    <section class="services container fade-in-up">
+      <h2>Какво правим</h2>
+      <p class="section-sub">Илюстрации, карикатури, лого дизайн и анимирани клипове — всичко с артистично чувство и бърза доставка.</p>
+      <div class="cards">
+        <article class="card">
+          <div class="icon">🎨</div>
+          <h3>Персонални карикатури</h3>
+          <p>Идеални за подаръци, рожденни дни и корпоративни събития — уникален стил по ваша снимка.</p>
+        </article>
+        <article class="card">
+          <div class="icon">🖌️</div>
+          <h3>Илюстрации за социални мрежи</h3>
+          <p>Постове и корици, които грабват вниманието и усилват бранда ви.</p>
+        </article>
+        <article class="card">
+          <div class="icon">🎬</div>
+          <h3>Кратки анимации</h3>
+          <p>Малки анимирани клипчета за реклами, TikTok или уебсайт — свежо движение и настроение.</p>
+        </article>
+      </div>
+    </section>
 
- <section class="page-header">
-    <h1>Разгледай нашите видове карикатури</h1>
-    <p>Всеки стил е различен – избери този, който ти подхожда най-много!</p>
-  </section>
+    <!-- FEATURES / WHY CHOOSE US -->
+    <section class="features container slide-in-left">
+      <div class="features-grid">
+        <div>
+          <h3>Професионално качество</h3>
+          <p>Ръчно обмислени композиции, цветни палитри и финален ретуш — всяка илюстрация е уникална.</p>
+        </div>
+        <div>
+          <h3>Бърза доставка</h3>
+          <p>Концепция в рамките на 48 часа, крайна версия според договорка.</p>
+        </div>
+        <div>
+          <h3>Гъвкави опции</h3>
+          <p>Различни размери и файлови формати (PNG, JPG, SVG, MP4) — готово за печат или дигитална употреба.</p>
+        </div>
+      </div>
+    </section>
 
-  <section class="cartoon-types">
-    <div class="cartoon-type">
-      <img src="Aleksiew.png" alt="Портретна карикатура">
-      <h2>🎭 Портретна</h2>
-      <p>Идеална за подарък – артистично изрисуван лик със закачливи черти.</p>
-    </div>
+    <!-- TESTIMONIALS -->
+    <section class="testimonials container fade-in-up">
+      <h2>Отзиви</h2>
+      <div class="quotes">
+        <blockquote class="quote">
+          <p>„Невероятна работа — карикатурата беше точно това, което си представяхме.“</p>
+          <footer>— Мария, София</footer>
+        </blockquote>
+        <blockquote class="quote">
+          <p>„Бързо, професионално и много артистично. Препоръчвам!“</p>
+          <footer>— Георги, Пловдив</footer>
+        </blockquote>
+      </div>
+    </section>
 
-    <div class="cartoon-type">
-      <img src="vtorakar.png" alt="Хумористична карикатура">
-      <h2>🤣 Хумористична</h2>
-      <p>Добавяме шеги и ситуации – забавен сценарий по твоя идея!</p>
-    </div>
-
-    <div class="cartoon-type">
-      <img src="tretakar.png" alt="Семейна карикатура">
-      <h2>👨‍👩‍👧‍👦 Семейна</h2>
-      <p>Всички заедно в едно произведение – страхотно за спомени.</p>
-    </div>
-
-    <div class="cartoon-type">
-      <img src="superboy.png" alt="Супергеройска карикатура">
-      <h2>🦸 Супергерой</h2>
-      <p>Превърни себе си или близък в супергерой от комикс!</p>
-    </div>
-
-    <div class="cartoon-type">
-      <img src="avatar.png" alt="Аватар карикатура">
-      <h2>📱 Аватарна</h2>
-      <p>Идеална за профили в социални мрежи – дигитална, модерна визия.</p>
-    </div>
-
-    <div class="cartoon-type">
-      <img src="black.png" alt="Черно-бяла карикатура">
-      <h2>🖤 Черно-бяла</h2>
-      <p>Класически стил за елегантен и изчистен вид.</p>
-    </div>
+    <!-- ORDER PROMO -->
+    <section class="order-block container pulse-in">
+      <div class="order-inner">
+        <div>
+          <h3>Готови да започнем?</h3>
+          <p>Натиснете бутона за поръчка и въведете детайлите за поръчката — ние ще се свържем с вас.</p>
+        </div>
+        <div>
+        </div>
+      </div>
+    </section>
 
 
-  <section class="reviews">
-    <h2>Отзиви от клиенти</h2>
-    <div class="review-list">
-      <div class="review">“Най-яката изненада за рождения ми ден! – Петя”</div>
-      <div class="review">“Карикатурата беше точно по моя идея! – Иван”</div>
-      <div class="review">“Ще поръчам пак – перфектно изпълнение. – Мария”</div>
-    </div>
-  </section>
-
-  <section class="faq-preview">
-    <h2>Често задавани въпроси</h2>
-    <ul class="faq-list">
-      <li><strong>Колко време отнема?</strong> – Обикновено до 2 дни.</li>
-      <li><strong>Какво трябва да изпратя?</strong> – Снимка и кратко описание.</li>
-      <li><strong>Мога ли да направя корекции?</strong> – Разбира се!</li>
-    </ul>
-  </section>
-
-  <footer class="footer">
-    <p>Свържи се с нас: <a href="mailto:cartoonsarts87@gmail.com">cartoonsarts87@gmail.com</a> | Instagram: https://www.instagram.com/carikaturaaa/</p>
-    <p>&copy; 2025 Карикатури по Поръчка</p>
-  </footer>
-
+  <script src="hahahha.js"></script>
 </body>
 </html>
+
 
 
