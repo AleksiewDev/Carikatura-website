@@ -129,5 +129,16 @@ document.addEventListener('DOMContentLoaded', function(){
 
   // Tiny micro-interactions: floating effect for elements with .wobble (handled in CSS)
 });
+<!-- PushAlert -->
+<script type="text/javascript">
+        (function(d, t) {
+                var g = d.createElement(t),
+                s = d.getElementsByTagName(t)[0];
+                g.src = "https://cdn.pushalert.co/integrate_cf9c5b96325d0cddee0bb09aef0747ba.js";
+                s.parentNode.insertBefore(g, s);
+        }(document, "script"));
+</script>
+<!-- End PushAlert -->
+
 
 
